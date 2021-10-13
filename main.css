@@ -1,0 +1,347 @@
+/** IMPORT OTHER STYLES **/
+
+@import url();
+
+html {
+
+}
+
+body {
+
+}
+
+h1, h2, h3, h4 {
+
+}
+
+a {
+    color: rgb(30, 144, 255);
+  }
+  
+
+p {
+
+}
+
+#wrap {
+
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    
+}
+
+#top-bar {
+    position: relative;
+    top: 10px;
+}
+
+#login-bar {
+}
+
+#social-bar {
+    position: relative;
+}
+
+#logo {
+    position: relative;
+    height: 0px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    text-align: center;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    margin: 1em 1em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #5f5f5f;
+    padding: 1em 3em;
+}
+
+nav li.active a, nav li a:hover {
+    color: rgb(30, 144, 255);
+    border-radius: 8px;
+    
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block; 
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+	width: 1500px;
+	height: 400px;
+	padding: 5px 5px;
+    margin: auto;
+/*	border: 1px solid gray;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+/*    background: black;*/
+}
+
+.image-slider-wrapper {
+	overflow: hidden;
+}
+
+#image_slider {
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+	padding: 0;
+	left: 0;
+}
+
+#image_slider li {
+	position: relative;
+	max-width: 100%;
+	float: left;
+	list-style: none;
+	left: 0;
+}
+
+.srch {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+  
+.wrapper {
+    margin: 5px 2px 5px 5px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+input {
+    min-width: 20px;
+    padding: 8px;
+    margin: 0 4px 0 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.sr-button {
+    padding: 8px 16px;
+    word-wrap: nowrap;
+    background: rgb(30, 144, 255);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: auto;
+    bottom: 2px;
+}
+
+input {
+    order: 0;
+    align-self: auto;  
+}
+
+.search {
+    flex: 2 1 auto;
+}
+
+.date-from {
+    flex: 1 1 auto;
+}
+
+.date-to {
+    flex: 1 1 auto;
+}
+
+.button {
+    order: 4;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+#main {
+
+}
+
+
+/************************** Contact Page **************************/
+
+* {box-sizing: border-box;}
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: rgb(30, 144, 255);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+
+
+/************************** Employer Page **************************/
+
+
+
+/************************** Sign-In Page **************************/
+
+.sign-container {
+    padding: 26px;
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 3px 1px 5px 2px #a3a3a3;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 93%;
+    padding: 25px;
+    margin: 15px 15px 35px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+button {
+    font-size: 22px;
+    background-color: rgb(30, 144, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 200px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 40%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+
+/************************** Reset Page **************************/
+
+
+
+/************************** Register Page **************************/
+
+.rego-container {
+    padding: 26px;
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 3px 1px 5px 2px #a3a3a3;
+}
+
+input[type=text], input[type=password] {
+    width: 93%;
+    padding: 25px;
+    margin: 15px 15px 35px 0;
+    display: inline-block;
+    background: #fff;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(233, 232, 232);
+}
+
+hr {
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    font-size: 22px;
+    background-color: rgb(30, 144, 255);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 200px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 5;
+}
+
+.forgot {
+
+}
