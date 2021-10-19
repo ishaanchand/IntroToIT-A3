@@ -22,16 +22,22 @@
                     </div>
                 </div> -->
                 <div id="logo">
-                    <h1>Unsure Recruitment Services</h1>
-                    <p>Logo Placement</p>
+                    <img src="img/logo.PNG" width="200px" height="150px">
                 </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="emp1.html">Employer</a></li>
-                        <li class="dropdown"><a href="emp2.html">Employee</a>
+                        <li class="dropdown"><a href="emp1.html">Employer</a>
+                            <div class="drop">
+                                <div class="dropdown-content">
+                                    <a href="sign.html">Sign In</a>
+                                    <a href="rego.html">Register</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="emp2.html">Applicant</a>
                             <div class="drop">
                                 <div class="dropdown-content">
                                     <a class="active" href="sign.html">Sign In</a>
@@ -55,14 +61,36 @@
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="ENTER PASSWORD" name="psw" required>
                   
-                <button type="submit">Login</button>
+                <button class="log-btn" type="submit">Login</button>
                 <br><br>
 
                 <label>
                   <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
 
-                <span class="psw"><a href="reset.html">Forgot Password?</a></span>
+                <span class="forgot-btn" onclick="openForm()">Forgot Password?</span>
+
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Forgot Password</h1>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <button type="submit" class="reset-btn">Reset Password</button>
+                      <button type="button" class="cancel-btn" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+
+                <script>
+                    function openForm() {
+                      document.getElementById("myForm").style.display = "block";
+                    }
+                    
+                    function closeForm() {
+                      document.getElementById("myForm").style.display = "none";
+                    }
+                </script>
             </div>
 
 
