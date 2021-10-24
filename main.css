@@ -118,11 +118,6 @@ nav li.active a, nav li a:hover {
 	height: 400px;
 	padding: 5px 5px;
     margin: auto;
-/*	border: 1px solid gray;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-/*    background: black;*/
 }
 
 .image-slider-wrapper {
@@ -217,7 +212,9 @@ input {
 
 
 
+/************************** main content home Page **************************/
 #main {
+    
 }
 
 
